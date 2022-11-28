@@ -1,0 +1,10 @@
+.navbar {
+display: flex;
+}
+
+.navLink {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 1rem;
+}
