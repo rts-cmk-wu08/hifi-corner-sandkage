@@ -2,8 +2,7 @@ import "./Logo.css"
 
 const Logo = () => {
     return ( 
-        <p className="logo">Hej</p>
-        // Kunne ikke importere logoet så har brugt et p tag for at vise at komponentet virker
+        <img className="logo" src="http://localhost:4000/assets/hifi_corner_logo.png" alt="" />
      );
 }
  
