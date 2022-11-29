@@ -1,11 +1,15 @@
 import './App.css';
+import introvideo from "./Components/video/HiFi-Corner-Web-Video.mp4"
+
+
+// --- OBS! Lyden på videoen skal være slået fra, ellers afspilles den ikke automatisk! --- //
 
 function App() {
   return (
     <div className="App">
 
-<video width="1920" height="1080" controls>
-  <source src="/src/Components/video/HiFi-Corner-Web-Video.mp4" type="video/mp4">
+<video width="100%" height="auto" muted autoPlay loop >
+  <source src={introvideo} type="video/mp4">
   </source>
 </video> 
 
