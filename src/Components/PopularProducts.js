@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import ReadMoreButton from "./ReadMoreButton";
 
 
 
@@ -23,8 +24,7 @@ const PopularProducts = () => {
                         <img src={`${product.images}`} alt={`${product.title}`}/>
                         <h3>{product.title}</h3>
                         <p>£ {product.price}</p>
-
-
+                        <ReadMoreButton/>
                     </article>
                 ))}
         </section>
