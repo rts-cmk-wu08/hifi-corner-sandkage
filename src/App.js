@@ -1,15 +1,14 @@
 import './App.css';
-import Footer from './Templates/Footer';
 import { Outlet } from 'react-router-dom';
-import Video from './Components/Video';
 import Header from './Templates/Header';
-
+import Video from './Components/Video';
+import Footer from './Templates/Footer';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
       <Outlet/>
+      <Header/>
       <Video/>
       <Footer/>
     </div>

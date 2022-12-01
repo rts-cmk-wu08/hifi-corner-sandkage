@@ -1,0 +1,28 @@
+.about__Heading {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #495464;
+}
+
+.about__subHeading {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.about__textHeading {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.813rem;
+    font-weight: 700;
+    color: #FF6900;
+    text-align: center; 
+}
+
+.about__text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.75rem;
+    text-align: center; 
+}
