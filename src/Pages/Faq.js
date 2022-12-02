@@ -1,31 +1,33 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import "./Faq.scss"
 
 
 const Faq = () => {
 
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState();
     const [faq, setFaq] = useState();
+    const [loading, setLoading] = useState(true);
     
     useEffect(() => {
         axios("http://localhost:4000/faq")
         .then(response => setFaq(response.data))
-        .catch(() => setError("Something went wrong"))
         .finally(() => setLoading(false))
     }, []);
 
-    return ( 
-        <section className="faqSection">
-            {loading && <p>Loading...</p>}
-            {error && <p>{error}</p>}
-            {!error && faq && (
-                <>
+    return loading ? <p>Loading...</p> : ( 
+        <section>
+            {
+                faq.map((faq) => (
+                    <>
                     <h1>{faq.headline}</h1>
-                    <p>{faq.headlinetext}</p>
-                    <p>{faq.text}</p>
-                </>
-            )}
+                    <article id={`${faq.subheadline}`}>
+                        <p className="headlinetext">{faq.headlinetext}</p>
+                        <h2>{faq.subheadline}</h2>
+                        <p>{faq.text}</p>
+                    </article>
+                    </>
+                ))
+            }
         </section>
      );
 }
