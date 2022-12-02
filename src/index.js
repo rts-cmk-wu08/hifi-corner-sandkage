@@ -12,9 +12,9 @@ const router = createBrowserRouter(
 
     </Route>,
 
-    <Route path="/" element={<About />}>
+    // <Route path="/" element={<About />}>
 
-    </Route>
+    // </Route>
   )
 )
 
