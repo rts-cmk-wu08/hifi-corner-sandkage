@@ -4,12 +4,14 @@ import './index.css';
 import App from './App';
 import Home from './Pages/Home';
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
+import Product from './Components/Product';
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route index element={<Home/>}/>
+      <Route path="/product/:id" element={<Product/>}/>
     </Route>
   )
 )
