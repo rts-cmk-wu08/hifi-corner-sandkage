@@ -1,10 +1,11 @@
 import PopularProducts from "../Components/PopularProducts";
+import "./Home.scss"
 
 const Home = () => {
-    return ( 
-        
+    return (
+        <div className="home_container">
         <PopularProducts/>
-        
+        </div>
      );
 }
  
