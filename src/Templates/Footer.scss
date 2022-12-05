@@ -5,7 +5,7 @@
 
 footer{
     margin: 0 auto;
-    width: 1200px;
+    width: 100%;
     background-color: black;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -93,6 +93,7 @@ footer{
     }
     img{
         padding-left: 63px;
+        max-width: 225px;
     }
     
 }
