@@ -6,6 +6,9 @@ section{
         text-transform: uppercase;
     }
 }
+section.nogrid{
+    display: block;
+}
 
 article {
     margin: 1rem 2.75rem;
