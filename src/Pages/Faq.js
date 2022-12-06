@@ -15,7 +15,7 @@ const Faq = () => {
     }, []);
 
     return loading ? <p>Loading...</p> : ( 
-        <section className="faqSection">
+        <section>
             {
                 faq.map((faq) => (
                     <>
