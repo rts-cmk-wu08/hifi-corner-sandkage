@@ -4,14 +4,14 @@ import './index.css';
 import App from './App';
 import Home from './Pages/Home';
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
-import Product from './Components/Product';
+import Product, {loader as getProductDetails} from './Components/Product';
 import Faq from "./Pages/Faq.js"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route index element={<Home/>}/>
-      <Route path="/product/:id" element={<Product/>}/>
+      <Route path="/product/:id" element={<Product/>} loader={getProductDetails}/>
       <Route path='/faq' element={<Faq />} />
     </Route>
   )
