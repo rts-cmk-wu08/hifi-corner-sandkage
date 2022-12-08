@@ -12,7 +12,7 @@ const PopularProducts = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        axios('http://localhost:4000/products')
+        axios('http://localhost:4000/products?_limit=4')
         .then(response => setProducts(response.data))
         .finally(() => setLoading(false))
     }, []);
