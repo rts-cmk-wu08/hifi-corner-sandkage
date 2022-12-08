@@ -15,7 +15,7 @@ const Faq = () => {
     }, []);
 
     return loading ? <p>Loading...</p> : ( 
-        <section>
+        <section className="nogrid">
             {
                 faq.map((faq) => (
                     <>
