@@ -5,7 +5,13 @@ const Product = () => {
 
     return ( 
     <article>
-        <h2>{productData.title}</h2>
+        <h2>PRODUCT</h2>
+        <img src={`http://localhost:4000/${productData.images}`} alt={productData.title} />
+        <h3>{productData.title}</h3>
+        <p>£ {productData.price}</p>
+        <p>{productData.stock}</p>
+
+
     </article>
     );
 }
