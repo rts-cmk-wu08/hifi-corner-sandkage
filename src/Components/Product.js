@@ -10,8 +10,6 @@ const Product = () => {
         <h3>{productData.title}</h3>
         <p>£ {productData.price}</p>
         <p>{productData.stock}</p>
-
-
     </article>
     );
 }
