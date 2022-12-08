@@ -1,10 +1,13 @@
-section {
+section{
     margin: 2.125rem;
 
     h1 {
         font-size: 3rem;
         text-transform: uppercase;
     }
+}
+section.nogrid{
+    display: block;
 }
 
 article {

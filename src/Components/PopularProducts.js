@@ -17,7 +17,7 @@ const PopularProducts = () => {
         .finally(() => setLoading(false))
     }, []);
 
-
+    /* const first4 = products.slice(0,4); */
 
     return loading ? <p>Loading...</p> :(
         <section>
@@ -26,6 +26,7 @@ const PopularProducts = () => {
             <SeeAllProductsButton/>
             </div>
             {
+                
                 products.map((product) => (
                     <article className="productcard productcard_popularproducts" key={product.id}>
                         <img src={`http://localhost:4000${product.images}`} alt={`${product.title}`}/>
