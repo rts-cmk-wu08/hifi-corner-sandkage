@@ -2,3 +2,15 @@
   background-color: black;
   height: 6.2rem;
 }
+.header_icons {
+  display: flex;
+  font-size: 1.6rem;
+  gap: 1.6rem;
+  margin-right: 2.5rem;
+  margin-top: -2.5rem;
+  justify-content: end;
+}
+.user_icon,
+.shoppingcart_icon {
+  color: #f4f4f2;
+}

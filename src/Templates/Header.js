@@ -1,6 +1,7 @@
 import "./Header.scss";
 import Logo from "../Components/Logo";
 import Navigation from "./Navigation";
+import { FaUser } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 
 const Header = () => {
@@ -8,7 +9,11 @@ const Header = () => {
     <header className="header">
       <Logo />
       <Navigation />
-      <FaShoppingCart />
+
+      <div className="header_icons">
+        <FaUser className="user_icon" />
+        <FaShoppingCart className="shoppingcart_icon" />
+      </div>
     </header>
   );
 };
