@@ -1,14 +1,17 @@
 .header {
   background-color: black;
   height: 6.2rem;
+  display: flex;
+  align-items: center;
+  padding-left: 34px;
 }
 .header_icons {
   display: flex;
   font-size: 1.6rem;
+  margin-left: auto;
+  margin-right: 4rem;
   gap: 1.6rem;
-  margin-right: 2.5rem;
-  margin-top: -2.5rem;
-  justify-content: end;
+  justify-self: end;
 }
 .user_icon,
 .shoppingcart_icon {
