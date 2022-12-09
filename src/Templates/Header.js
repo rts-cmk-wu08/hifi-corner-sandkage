@@ -3,6 +3,7 @@ import Logo from "../Components/Logo";
 import Navigation from "./Navigation";
 import { FaUser } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 
 const Header = () => {
   return (
