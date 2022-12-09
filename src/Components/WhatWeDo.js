@@ -32,7 +32,7 @@ const WhatWeDo = () => {
             2 Joppa Rd,Edinburgh, EH15 2EU<br></br>
             Monday to Friday: 10:00am - 5:30pm<br></br>
             Saturday: 10:00am - 5:30pm<br></br> 
-            Sunday: Closed<br></br>
+            Sunday: Closed
           </p>
         </div>
         <div>
@@ -41,7 +41,7 @@ const WhatWeDo = () => {
             44 Cow Wynd, Falkirk, Central Region, FK1 1PU<br></br> 
             Monday to Friday: 10:00am - 5:30pm<br></br> 
             Saturday - By appointment only<br></br> 
-            Sunday: Closed{" "}<br></br>
+            Sunday: Closed{" "}
           </p>
         </div>
       </article>
