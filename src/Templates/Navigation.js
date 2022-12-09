@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import NavItem from "../Components/NavItem";
-import "./Navigation.css"
+import "./Navigation.scss"
 
 const Navigation = () => {
     return ( 
@@ -11,5 +11,5 @@ const Navigation = () => {
         </nav>
      );
 }
- 
+
 export default Navigation;

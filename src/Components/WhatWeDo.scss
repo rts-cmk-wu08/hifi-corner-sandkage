@@ -1,0 +1,43 @@
+@import "../global.scss";
+
+.whatwedo_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: white;
+  background-color: black;
+  padding-top: 109px;
+  width: 100%;
+  padding-bottom: 4.6rem;
+  margin-top: 4.25rem;
+  margin-bottom: 10em;
+}
+.whatwedo {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 1.5rem;
+  max-width: 31.5rem;
+  margin-left: 47px;
+  h3 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+.openinghours {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  max-width: 15rem;
+  row-gap: 1.5rem;
+  justify-self: end;
+  margin-right: 20%;
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
