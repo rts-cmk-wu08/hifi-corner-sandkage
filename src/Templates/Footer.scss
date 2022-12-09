@@ -4,7 +4,7 @@
 }
 
 footer {
-  width: 1200px;
+  width: 100%;
   background-color: black;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -94,6 +94,8 @@ footer {
   }
   img {
     padding-left: 63px;
+    height: 65px;
+    width: 300px;
     user-select: none;
   }
 }
