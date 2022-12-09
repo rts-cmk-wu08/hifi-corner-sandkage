@@ -1,10 +1,13 @@
 .navbar {
 display: flex;
+justify-content: space-between;
+width: 256px;
+margin-left: 32px;
 }
 
 .navLink {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
 }
