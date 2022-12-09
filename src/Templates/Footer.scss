@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 footer {
   width: 100%;
   background-color: black;
@@ -94,8 +89,7 @@ footer {
   }
   img {
     padding-left: 63px;
-    height: 65px;
-    width: 300px;
+    max-width: 225px;
     user-select: none;
   }
 }
