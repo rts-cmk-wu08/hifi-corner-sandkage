@@ -1,6 +1,8 @@
+import "./Sortbyform.scss";
+
 const Sortbyform = () => {
     return (  
-        <form>
+        <form action="/shop">
         <div className="brand">
         <label>Brand</label>
         <i></i>
