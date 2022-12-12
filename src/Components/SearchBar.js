@@ -4,8 +4,13 @@ import { FaSearch } from "react-icons/fa";
 
 const SearchBar = ({ placeholder }) => {
   return (
-    <form className="searchContainer">
-      <input className="searchInput" type="text" placeholder={placeholder} />
+    <form action="/shop" className="searchContainer">
+      <input
+        className="searchInput"
+        type="search"
+        name="search"
+        placeholder={placeholder}
+      />
       <FaSearch className="searchIcon" />
     </form>
   );
