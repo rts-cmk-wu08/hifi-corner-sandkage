@@ -1,6 +1,7 @@
 .searchContainer {
   display: grid;
 }
+
 .searchInput {
   background-color: #f4f4f2;
   border: 0;
@@ -12,6 +13,7 @@
   padding-left: 0.5em;
   color: black;
 }
+
 .searchIcon {
   position: absolute;
   justify-self: end;
@@ -20,10 +22,12 @@
   width: 22px;
   height: 22px;
 }
+
 .searchInput::placeholder {
-  font-size: 12px;
+  font-size: 15px;
   opacity: 1;
 }
+
 input:focus { 
   outline: none !important;
   border-color: #FF6900;
