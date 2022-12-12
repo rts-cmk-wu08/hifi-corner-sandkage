@@ -1,6 +1,7 @@
 import React from "react";
 import "./SearchBar.scss";
 import { FaSearch } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const SearchBar = ({ placeholder }) => {
   return (
@@ -11,7 +12,9 @@ const SearchBar = ({ placeholder }) => {
         name="search"
         placeholder={placeholder}
       />
-      <FaSearch className="searchIcon" />
+      <button className="searchIcon" type="submit">
+        <FaSearch />
+      </button>
     </form>
   );
 };
