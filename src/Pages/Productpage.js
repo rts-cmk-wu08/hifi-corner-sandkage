@@ -8,18 +8,21 @@ import Sortbyform from "../Components/Sortbyform";
 import { useSearchParams } from "react-router-dom";
 
 const Productpage = () => {
+    console.log("Render");
     const [params] = useSearchParams();
-    /* console.log(params.get("search")) */
+    console.log("search params: "+ params.get("search"))
+    const [getSearch, setGetSearch] = useState(params.get("search"));
     const [allProducts, setAllProducts] = useState();
     const [loading, setLoading] = useState(true);
-    const defaultFetch = 'http://localhost:4000/products';
-    
+    const [defaultFetch, setdefaultFetch] = useState ('http://localhost:4000/products');
+    console.log("Search state: " + getSearch)
 
     useEffect(() => {
-        axios(defaultFetch + `?q=${params.get("search")}`)
+        axios(getSearch ? defaultFetch + `?q=${getSearch}`: defaultFetch)
         .then(response => setAllProducts(response.data))
         .finally(() => setLoading(false))
-    }, []);
+        console.log("test params dep")
+    }, [getSearch]);
 
     return loading ? <p>Loading...</p> :( 
         <section className="productpage_container">
