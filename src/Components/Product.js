@@ -1,4 +1,5 @@
 import { useLoaderData } from "react-router-dom";
+import "../Components/Product.scss"
 
 const Product = () => {
     const productData = useLoaderData();
@@ -6,7 +7,7 @@ const Product = () => {
     return ( 
     <article>
         <h2>PRODUCT</h2>
-        <img src={`http://localhost:4000/${productData.images}`} alt={productData.title} />
+        <img class="productsImages" src={`http://localhost:4000/${productData.images}`} alt={productData.title} />
         <h3>{productData.title}</h3>
         <p>£ {productData.price}</p>
         <p>{productData.stock}</p>
