@@ -1,5 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+
+h2 {
+  font-size: 48px;
+  padding: 2.5rem;
+  color: #495464;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+}
+h3 {
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+}
+p {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.productContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 3rem;
+}
 .productsImages {
-  height: 182px;
-  width: 337px;
+  height: 300px;
+  width: 450px;
   /* bob */
 }
