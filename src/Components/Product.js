@@ -13,7 +13,7 @@ const Product = () => {
           src={`http://localhost:4000/${productData.images}`}
           alt={productData.title}
         />
-        <div>
+        <div className="productDescription">
           <h3>{productData.title}</h3>
           <p>{productData.description}</p>
           <p>£ {productData.price}</p>
