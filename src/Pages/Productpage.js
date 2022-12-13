@@ -5,25 +5,26 @@ import "../Components/Buttons.scss"
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Sortbyform from "../Components/Sortbyform";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const Productpage = () => {
-    console.log("Render");
-    const [params] = useSearchParams();
-    console.log("search params: "+ params.get("search"))
-    const [getSearch, setGetSearch] = useState(params.get("search"));
+    const [searchParams, setSearchParams] = useSearchParams();
+    const navigate = useNavigate();
+    console.log(searchParams)
+    /* console.log("Render");
+    const [searcharams] = useSearchParams();
+    console.log("search params: "+ params.get("search")) */
     const [allProducts, setAllProducts] = useState();
     const [loading, setLoading] = useState(true);
-    const [defaultFetch, setdefaultFetch] = useState ('http://localhost:4000/products');
-    console.log("Search state: " + getSearch)
+    const defaultFetch = ('http://localhost:4000/products');
+    console.log(searchParams.get("search"));
 
     useEffect(() => {
-        axios(getSearch ? defaultFetch + `?q=${getSearch}`: defaultFetch)
+        axios(searchParams.get("search") ? defaultFetch + `?q=${searchParams.get("search")}`: navigate(defaultFetch))
         .then(response => setAllProducts(response.data))
         .finally(() => setLoading(false))
-        console.log("test params dep")
-    }, [getSearch]);
+    }, [navigate, searchParams, setSearchParams]);
 
     return loading ? <p>Loading...</p> :( 
         <section className="productpage_container">
