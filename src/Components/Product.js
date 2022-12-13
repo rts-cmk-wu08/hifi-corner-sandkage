@@ -1,5 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import "../Components/Product.scss";
+import ImageSlider from "./ImageSlider.js"
 
 const Product = () => {
   const productData = useLoaderData();
@@ -13,6 +14,7 @@ const Product = () => {
           src={`http://localhost:4000/${productData.images}`}
           alt={productData.title}
         />
+        <ImageSlider images={productData.images}/>
         <div className="productDescription">
           <h3>{productData.title}</h3>
           <p>{productData.description}</p>
