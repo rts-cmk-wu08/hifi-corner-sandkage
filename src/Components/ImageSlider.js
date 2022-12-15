@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import axios from "axios";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+import "./ImageSlider.scss"
 
 const ImageSlider = ({ images }) => {
   const [current, setCurrent] = useState(0);
@@ -28,7 +28,7 @@ const ImageSlider = ({ images }) => {
           key={index}
         >
           {index === current && (
-              <img src={slide.image} alt='Image of the product' className='image' />
+              <img src={`http://localhost:4000${slide}`} alt='Image of the product' className='image' />
             )}
         </div>
       ))}
