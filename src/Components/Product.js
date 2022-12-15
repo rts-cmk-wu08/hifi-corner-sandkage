@@ -9,11 +9,6 @@ const Product = () => {
     <>
       <h2>PRODUCT</h2>
       <article className="productContainer">
-        <img
-          className="productsImages"
-          src={`http://localhost:4000/${productData.images}`}
-          alt={productData.title}
-        />
         <ImageSlider images={productData.images}/>
         <div className="productDescription">
           <h3>{productData.title}</h3>
