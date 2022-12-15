@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import "./ImageSlider.scss"
 
 const ImageSlider = ({ images }) => {
@@ -20,8 +20,8 @@ const ImageSlider = ({ images }) => {
 
   return (
     <section className='slider'>
-      <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
-      <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
+      <IoIosArrowBack className='left-arrow' onClick={prevSlide} />
+      <IoIosArrowForward className='right-arrow' onClick={nextSlide} />
       {images.map((slide, index) => (
         <div
           className={index === current ? 'slide active' : 'slide'}
