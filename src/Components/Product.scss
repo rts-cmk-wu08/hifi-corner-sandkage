@@ -24,9 +24,36 @@ p {
 .productsImages {
   height: 300px;
   width: 450px;
-  margin-left: 9rem
-  /* bob */
 }
-.productDescription{
+.productDescription {
   margin-right: 3.6rem;
+}
+
+.color {
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.colorBtn_black {
+  background-color: black;
+}
+.colorBtn_silver {
+  background: linear-gradient(
+    180deg,
+    rgba(145, 146, 146, 1) 0%,
+    rgba(223, 224, 225, 1) 100%
+  );
+}
+.colorBtn_gold {
+  background: linear-gradient(
+    180deg,
+    rgba(175, 135, 38, 1) 0%,
+    rgba(248, 240, 139, 1) 100%
+  );
+}
+
+.productPrice {
+  font-size: 24px;
+  font-weight: 600;
 }
