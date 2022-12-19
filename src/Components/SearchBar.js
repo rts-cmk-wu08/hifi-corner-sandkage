@@ -1,14 +1,20 @@
 import React from "react";
 import "./SearchBar.scss";
 import { FaSearch } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const SearchBar = ({ placeholder }) => {
+  const navigate = useNavigate();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    navigate("/shop?search=" + e.target.search.value);
+    e.target.reset();
+  };
   return (
-    <form action="/shop" className="searchContainer">
+    <form onSubmit={handleSubmit} className="searchContainer">
       <input
         className="searchInput"
-        type="search"
+        type="text"
         name="search"
         placeholder={placeholder}
       />
