@@ -25,6 +25,7 @@ p {
   height: 300px;
   width: 450px;
 }
+
 .product {
   display: grid;
   grid-template-columns: repeat(3, 3rem);
@@ -47,6 +48,16 @@ input[type="radio"] {
   background-color: rgb(255, 255, 255);
   /* Not removed via appearance */
   margin: 0;
+
+.productDescription {
+  margin-right: 3.6rem;
+}
+.color {
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+  border-radius: 20px;
+
 }
 
 .colorBtn_black {
