@@ -1,21 +1,20 @@
-
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-img{
-    height: auto;
-    width: 100%;
-    box-sizing: border-box;
+img {
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 // fontfamily
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
-$primarycolor: #F4F4F2;
-$secondarycolor: #E8E8E8;
-$tertiarycolor: #BBBFCA;
+$primarycolor: #f4f4f2;
+$secondarycolor: #e8e8e8;
+$tertiarycolor: #bbbfca;
 $quaternarycolor: #495464;
 $quinarycolor: #000000;
-$accentcolor: #FF6900;
+$accentcolor: #ff6900;
