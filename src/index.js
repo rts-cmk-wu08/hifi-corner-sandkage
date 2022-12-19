@@ -6,6 +6,7 @@ import Home from './Pages/Home';
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 import Product from './Components/Product';
 import Faq from "./Pages/Faq.js"
+import About from './Pages/About';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -13,6 +14,7 @@ const router = createBrowserRouter(
       <Route index element={<Home/>}/>
       <Route path="/product/:id" element={<Product/>}/>
       <Route path='/faq' element={<Faq />} />
+      <Route path='/aboutus' element={<About />} />
     </Route>
   )
 )

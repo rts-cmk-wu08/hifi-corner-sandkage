@@ -1,0 +1,25 @@
+.aboutUsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem;
+}
+
+.aboutUsImg {
+    height: 18.13rem;
+    width: 30.69rem;
+    background-color: black;
+    justify-self: center;
+}
+
+.card {
+    text-align: center;
+}
+
+.subheadline {
+    padding-top: 0;
+}
+
+.orangeText {
+    color: #FF6900;
+    font-weight: 700;
+}

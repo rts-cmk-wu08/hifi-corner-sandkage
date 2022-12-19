@@ -20,7 +20,7 @@ const PopularProducts = () => {
 
 
     return loading ? <p>Loading...</p> :(
-        <section>
+        <section className="popularProductSection">
             <div>
             <h1>POPULAR PRODUCTS</h1>
             <SeeAllProductsButton/>
