@@ -16,25 +16,24 @@ const Product = () => {
         <div className="productDescription">
           <h3>{productData.title}</h3>
           <p>{productData.description}</p>
-          <div className="productBtn">
-            <div className="colorBtn_black color"></div>
-            <div className="text">
-              <p>Black</p>
-            </div>
-          </div>
-          <div className="productBtn">
-            <div className="colorBtn_silver color"></div>
-            <div className="text">
-              <p>Silver</p>
-            </div>
-          </div>
-          <div className="productBtn">
-            <div className="colorBtn_gold color"></div>
-            <div className="text">
-              <p>Gold</p>
-            </div>
+
+          <div className="product">
+            <label className="black" for="black">
+              <input type="radio" name="radio" className="silver" />
+              Black
+            </label>
+            <label className="silver" for="colorBtn_silver color">
+              <input className="" type="radio" name="radio" />
+              Silver
+            </label>
+            <label className="gold" for="colorBtn_gold color">
+              <input type="radio" className="gold" name="radio" />
+              Gold
+            </label>
           </div>
           <p className="productPrice">£ {productData.price}</p>
+          <div className="inStock"></div>
+          <button className="addtocartBtn">Add to cart</button>
           <p>{productData.stock}</p>
         </div>
       </article>
