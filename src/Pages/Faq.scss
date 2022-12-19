@@ -1,20 +1,16 @@
-section{
+.faq{
     margin: 2.125rem;
 
     h1 {
         font-size: 3rem;
         text-transform: uppercase;
     }
-}
-section.nogrid{
-    display: block;
-}
-
-article {
-    margin: 1rem 2.75rem;
-    p {
-        font-size: 0.875rem;
-        white-space: pre-wrap;
+    article {
+        margin: 1rem 2.75rem;
+        p {
+            font-size: 0.875rem;
+            white-space: pre-wrap;
+        }
     }
 }
 
