@@ -1,13 +1,14 @@
 // --- OBS! Lyden på vidoen skal være slået fra med koden "muted" før vidoen afspilles automatisk --- //
 
-import introvideo from "./video/HiFi-Corner-Web-Video.mp4"
-
+import "./Video.scss"
+import herovideo from "../video/hero_video.mp4"
 const Video = () => {
-    return ( 
+ 
+    return (
 
 <section className="introvideo">
-    <video width="100%" height="auto" autoPlay loop muted>
-    <source src={introvideo}></source>
+    <video width="100%" height="auto" controlslist="nofullscreen nodownload" autoPlay loop muted>
+    <source src={herovideo} type="video/mp4" />
     </video>
 </section>
 

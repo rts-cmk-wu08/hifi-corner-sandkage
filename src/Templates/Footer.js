@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import "./Footer.scss";
 import { AiOutlinePhone } from "react-icons/ai";
 import { FiFacebook,FiYoutube,FiTwitter,FiInstagram } from "react-icons/fi";
@@ -9,13 +9,13 @@ const Footer = () => {
     return ( 
     <footer>
         <nav className="footer_nav">
-            <div className="navigation"><Link>Home</Link>
-            <Link>Shop</Link>
-            <Link>About Us</Link></div>
+            <div className="navigation"><Link to="/">Home</Link>
+            <Link to="">Shop</Link>
+            <Link to="">About Us</Link></div>
             <div className="faq">
-            <Link>Returns & Refunds</Link>
-            <Link>Delivery<span>Privacy Policy</span></Link>
-            <Link>Terms & Conditions</Link>
+            <Link to="/faq#Refunds">Returns & Refunds</Link>
+            <Link to="/faq#Delivery">Delivery<span>Privacy Policy</span></Link>
+            <Link to="/faq#Returns process/Your statutory rights">Terms & Conditions</Link>
             </div>
         </nav>
         
