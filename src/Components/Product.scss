@@ -19,12 +19,36 @@ p {
 .productContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 3rem;
+  margin: 2.5rem 5rem auto;
 }
 .productsImages {
   height: 300px;
   width: 450px;
 }
+
+.product {
+  display: grid;
+  grid-template-columns: repeat(3, 3rem);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+label {
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+
+input[type="radio"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: rgb(255, 255, 255);
+  /* Not removed via appearance */
+  margin: 0;
+
 .productDescription {
   margin-right: 3.6rem;
 }
@@ -33,7 +57,9 @@ p {
   width: 30px;
   border: 1px solid black;
   border-radius: 20px;
+
 }
+
 .colorBtn_black {
   background-color: black;
 }
@@ -55,4 +81,16 @@ p {
 .productPrice {
   font-size: 24px;
   font-weight: 600;
+}
+
+.inStock {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: #008000;
+}
+.addtocartBtn {
+  border-radius: 2.5px;
+  width: 23rem;
+  height: 2.8rem;
 }
