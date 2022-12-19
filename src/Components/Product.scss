@@ -40,14 +40,13 @@ label {
   border-radius: 30px;
 }
 
-input[type="radio"] {
-  /* Add if not using autoprefixer */
-  -webkit-appearance: none;
+
+
+input[type="radio"]::before {
   appearance: none;
-  /* For iOS < 15 to remove gradient background */
-  background-color: rgb(255, 255, 255);
-  /* Not removed via appearance */
-  margin: 0;
+  content: "";
+  cursor: pointer;
+}
 
 .productDescription {
   margin-right: 3.6rem;
@@ -60,17 +59,17 @@ input[type="radio"] {
 
 }
 
-.colorBtn_black {
+.black {
   background-color: black;
 }
-.colorBtn_silver {
+.silver {
   background: linear-gradient(
     180deg,
     rgba(145, 146, 146, 1) 0%,
     rgba(223, 224, 225, 1) 100%
   );
 }
-.colorBtn_gold {
+.gold {
   background: linear-gradient(
     180deg,
     rgba(175, 135, 38, 1) 0%,

@@ -15,17 +15,14 @@ const Product = () => {
           <p>{productData.description}</p>
 
           <div className="product">
-            <label className="black" for="black">
+            <label className="black" for="black_Btn">
               <input type="radio" name="radio" className="silver" />
-              Black
             </label>
-            <label className="silver" for="colorBtn_silver color">
+            <label className="silver" for="silver_Btn">
               <input className="" type="radio" name="radio" />
-              Silver
             </label>
-            <label className="gold" for="colorBtn_gold color">
+            <label className="gold" for="gold_Btn">
               <input type="radio" className="gold" name="radio" />
-              Gold
             </label>
           </div>
           <p className="productPrice">£ {productData.price}</p>
