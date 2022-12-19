@@ -3,16 +3,16 @@
 import "./Video.scss"
 import herovideo from "../video/hero_video.mp4"
 const Video = () => {
- 
+
     return (
 
-<section className="introvideo">
-    <video width="100%" height="auto" controlslist="nofullscreen nodownload" autoPlay loop muted>
-    <source src={herovideo} type="video/mp4" />
-    </video>
-</section>
+        <section className="introvideo">
+            <video width="100%" height="auto" controlsList="nofullscreen nodownload" autoPlay loop muted>
+                <source src={herovideo} type="video/mp4" />
+            </video>
+        </section>
 
-);
+    );
 }
- 
+
 export default Video;

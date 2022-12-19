@@ -7,9 +7,9 @@ const Product = () => {
 
   return (
     <>
-      <h2>PRODUCT</h2>
+      <h2 className="product_heading">PRODUCT</h2>
       <article className="productContainer">
-        <ImageSlider images={productData.images}/>
+        <ImageSlider images={productData.images} />
         <div className="productDescription">
           <h3>{productData.title}</h3>
           <p>{productData.description}</p>
