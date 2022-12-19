@@ -38,7 +38,7 @@ const Productpage = () => {
             <div className="products">
             {allProducts.map((singleproduct) => (
                 <figure className="productcard productcard_productpage">
-                    <Link to={`/product/${singleproduct.id}`} key={singleproduct.id}><img src={`http://localhost:4000${singleproduct.images}`} alt={singleproduct.title} /></Link>
+                    <Link to={`/product/${singleproduct.id}`} key={singleproduct.id}><img src={`http://localhost:4000${singleproduct.images[0]}`} alt={singleproduct.title} /></Link>
                     <h3>{singleproduct.title}</h3>
                     <p>£ {singleproduct.price}</p>
                     <div className="stock_container"><button className="button_productpage">Add to cart</button><p className="stock_text">In stock<div className="stock_icon"></div></p></div>
