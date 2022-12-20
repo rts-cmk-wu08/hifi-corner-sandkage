@@ -37,6 +37,17 @@ const Product = () => {
           <p>{productData.stock}</p>
         </div>
       </article>
+      <article className="SpecsContainer">
+        <h3>Product specifications</h3>
+        <table>
+          {productData.specs.map((specdata) => (
+            <th>{specdata.name}</th>
+          ))}
+          <td></td>
+          <th></th>
+          <td></td>
+        </table>
+      </article>
     </>
   );
 };
