@@ -43,14 +43,13 @@ label {
   border-radius: 30px;
 }
 
-input[type="radio"] {
-  /* Add if not using autoprefixer */
-  -webkit-appearance: none;
+
+
+input[type="radio"]::before {
   appearance: none;
-  /* For iOS < 15 to remove gradient background */
-  background-color: rgb(255, 255, 255);
-  /* Not removed via appearance */
-  margin: 0;
+  content: "";
+  cursor: pointer;
+}
 
   .productDescription {
     margin-right: 3.6rem;
@@ -62,11 +61,43 @@ input[type="radio"] {
     border: 1px solid black;
     border-radius: 20px;
 
+
+.black {
+  background-color: black;
+}
+.silver {
+  background: linear-gradient(
+    180deg,
+    rgba(145, 146, 146, 1) 0%,
+    rgba(223, 224, 225, 1) 100%
+  );
+}
+.gold {
+  background: linear-gradient(
+    180deg,
+    rgba(175, 135, 38, 1) 0%,
+    rgba(248, 240, 139, 1) 100%
+  );
+}
+
   }
+
 
   .colorBtn_black {
     background-color: black;
   }
+
+
+.inStock {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: #008000;
+}
+.addtocartBtn {
+  border-radius: 2.5px;
+  width: 23rem;
+  height: 2.8rem;
 
   .colorBtn_silver {
     background: linear-gradient(180deg,
@@ -97,4 +128,5 @@ input[type="radio"] {
     width: 23rem;
     height: 2.8rem;
   }
+
 }
