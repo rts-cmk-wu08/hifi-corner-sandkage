@@ -85,11 +85,17 @@ p {
   margin-right: 3.6rem;
 }
 
+.radio{
+  accent-color:#FF6900;
+
+}
+
 .color {
   height: 30px;
   width: 30px;
   border: 1px solid black;
   border-radius: 20px;
+}
 
 .black {
   background-color: black;
@@ -110,7 +116,6 @@ p {
     rgba(248, 240, 139, 1) 100%
   );
 }
-  }
 
   .colorBtn_black {
     background-color: black;
@@ -121,9 +126,6 @@ input {
   height: 40px;
   cursor: pointer;
   content: "";
-}
-input::after {
-  
 }
 
 .inStock {
