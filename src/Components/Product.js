@@ -1,6 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import "../Components/Product.scss";
-import ImageSlider from "./ImageSlider.js"
+import ImageSlider from "./ImageSlider.js";
 
 const Product = () => {
   const productData = useLoaderData();
@@ -9,7 +9,7 @@ const Product = () => {
     <>
       <h2>PRODUCT</h2>
       <article className="productContainer">
-        <ImageSlider images={productData.images}/>
+        <ImageSlider images={productData.images} />
         <div className="productDescription">
           <h3>{productData.title}</h3>
           <p>{productData.description}</p>
@@ -31,11 +31,11 @@ const Product = () => {
           <p>{productData.stock}</p>
         </div>
       </article>
-      <article className="SpecsContainer">
+      <article className="specsContainer">
         <h3>Product specifications</h3>
         <table>
           {productData.specs.map((specdata) => (
-            <th>{specdata.name}</th>
+            <th>{specdata.name + specdata.value}</th>
           ))}
           <td></td>
           <th></th>
