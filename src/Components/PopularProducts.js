@@ -20,7 +20,7 @@ const PopularProducts = () => {
     /* const first4 = products.slice(0,4); */
 
     return loading ? <p>Loading...</p> :(
-        <section className="popular_container">
+        <section className="popularProductSection">
             <div>
             <h1>POPULAR PRODUCTS</h1>
             <SeeAllProductsButton/>
