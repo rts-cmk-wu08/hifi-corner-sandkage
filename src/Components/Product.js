@@ -16,15 +16,16 @@ const Product = () => {
 
           <div className="product">
             <label className="black" for="black_Btn">
-              <input className="radio" type="radio" name="radio"  />
+              <input className="radio black" type="radio" name="radio"  />
             </label>
             <label className="silver" for="silver_Btn">
-              <input className="radio" type="radio" name="radio" />
+              <input className="radio silver" type="radio" name="radio" />
             </label>
             <label className="gold" for="gold_Btn">
-              <input className="radio" type="radio" name="radio" />
+              <input className="radio gold" type="radio" name="radio" />
             </label>
           </div>
+          
           <p className="productPrice">£ {productData.price}</p>
           <div className="inStock"></div>
           <button className="addtocartBtn">Add to cart</button>
