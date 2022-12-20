@@ -1,5 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import "../Components/Product.scss";
+import ImageSlider from "./ImageSlider.js"
 
 const Product = () => {
   const productData = useLoaderData();
@@ -8,27 +9,20 @@ const Product = () => {
     <>
       <h2>PRODUCT</h2>
       <article className="productContainer">
-        <img
-          className="productsImages"
-          src={`http://localhost:4000/${productData.images}`}
-          alt={productData.title}
-        />
+        <ImageSlider images={productData.images}/>
         <div className="productDescription">
           <h3>{productData.title}</h3>
           <p>{productData.description}</p>
 
           <div className="product">
-            <label className="black" for="black">
+            <label className="black" for="black_Btn">
               <input type="radio" name="radio" className="silver" />
-              Black
             </label>
-            <label className="silver" for="colorBtn_silver color">
+            <label className="silver" for="silver_Btn">
               <input className="" type="radio" name="radio" />
-              Silver
             </label>
-            <label className="gold" for="colorBtn_gold color">
+            <label className="gold" for="gold_Btn">
               <input type="radio" className="gold" name="radio" />
-              Gold
             </label>
           </div>
           <p className="productPrice">£ {productData.price}</p>

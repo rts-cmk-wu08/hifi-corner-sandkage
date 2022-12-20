@@ -25,6 +25,7 @@ p {
   height: 300px;
   width: 450px;
 }
+
 .product {
   display: grid;
   grid-template-columns: repeat(3, 3rem);
@@ -39,27 +40,36 @@ label {
   border-radius: 30px;
 }
 
-input[type="radio"] {
-  /* Add if not using autoprefixer */
-  -webkit-appearance: none;
+
+
+input[type="radio"]::before {
   appearance: none;
-  /* For iOS < 15 to remove gradient background */
-  background-color: rgb(255, 255, 255);
-  /* Not removed via appearance */
-  margin: 0;
+  content: "";
+  cursor: pointer;
 }
 
-.colorBtn_black {
+.productDescription {
+  margin-right: 3.6rem;
+}
+.color {
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+  border-radius: 20px;
+
+}
+
+.black {
   background-color: black;
 }
-.colorBtn_silver {
+.silver {
   background: linear-gradient(
     180deg,
     rgba(145, 146, 146, 1) 0%,
     rgba(223, 224, 225, 1) 100%
   );
 }
-.colorBtn_gold {
+.gold {
   background: linear-gradient(
     180deg,
     rgba(175, 135, 38, 1) 0%,
