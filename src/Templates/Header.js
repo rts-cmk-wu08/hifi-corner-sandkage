@@ -4,8 +4,13 @@ import Navigation from "./Navigation";
 import { FaUser } from "react-icons/fa";
 import SearchBar from "../Components/SearchBar";
 import ShoppingCart from "../Components/Shoppingcart";
+import { useContext } from "react";
+import { CartContext } from "../Context/CartContext";
 
 const Header = () => {
+
+  const { totalCount, totalPrice } = useContext(CartContext)
+
   return (
     <header className="header">
       <Logo />
@@ -14,7 +19,8 @@ const Header = () => {
         <SearchBar placeholder="Search product..." />
         <FaUser className="user_icon" />
         <ShoppingCart />
-
+        <div style={{color: "orange"}}>{totalCount}</div>
+        <div style={{color: "green"}}>{totalPrice}</div>
       </div>
     </header>
   );
