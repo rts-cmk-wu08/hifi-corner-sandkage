@@ -7,10 +7,12 @@ h2 {
   font-weight: 500;
   font-family: "Open Sans", sans-serif;
 }
+
 h3 {
   font-size: 24px;
   font-family: "Open Sans", sans-serif;
 }
+
 p {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
@@ -21,6 +23,7 @@ p {
   grid-template-columns: repeat(2, 1fr);
   margin: 2.5rem 5rem auto;
 }
+
 .productsImages {
   height: 300px;
   width: 450px;
@@ -40,17 +43,15 @@ label {
   border-radius: 30px;
 }
 
-
-
 input[type="radio"]::before {
   appearance: none;
   content: "";
-  cursor: pointer;
 }
 
 .productDescription {
   margin-right: 3.6rem;
 }
+
 .color {
   height: 30px;
   width: 30px;
@@ -62,6 +63,7 @@ input[type="radio"]::before {
 .black {
   background-color: black;
 }
+
 .silver {
   background: linear-gradient(
     180deg,
@@ -69,6 +71,7 @@ input[type="radio"]::before {
     rgba(223, 224, 225, 1) 100%
   );
 }
+
 .gold {
   background: linear-gradient(
     180deg,
@@ -88,6 +91,7 @@ input[type="radio"]::before {
   height: 15px;
   background-color: #008000;
 }
+
 .addtocartBtn {
   border-radius: 2.5px;
   width: 23rem;
