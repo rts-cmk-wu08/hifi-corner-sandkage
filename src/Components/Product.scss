@@ -4,7 +4,7 @@
   font-size: 48px;
   padding: 2.5rem;
   color: #495464;
-  font-weight: 500;
+  font-weight: 600;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -34,37 +34,67 @@ p {
   grid-template-columns: repeat(3, 3rem);
   gap: 1.5rem;
   margin-top: 2.5rem;
+
 }
 
-label {
+.black:hover {
+  opacity: 0.75;
+}
+
+.silver:hover {
+  opacity: 0.75;
+}
+
+.gold:hover {
+  opacity: 0.75;
+}
+
+.black {
   width: 40px;
   height: 40px;
-  border: 2px solid black;
   border-radius: 30px;
-}
-
-
-
-input[type="radio"]::before {
-  appearance: none;
-  content: "";
+  background: #000000;
   cursor: pointer;
+  transition: 0.25s;
 }
 
-  .productDescription {
-    margin-right: 3.6rem;
-  }
+.silver {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  background: linear-gradient(200.56deg, #919292 24.92%, #DFE0E1 86.36%);
+  cursor: pointer;
+  transition: 0.25s;
+}
 
-  .color {
-    height: 30px;
-    width: 30px;
-    border: 1px solid black;
-    border-radius: 20px;
+.gold {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  background: linear-gradient(191.53deg, #AF8726 13.03%, #F8F08B 91.53%);
+  cursor: pointer;
+  transition: 0.25s;
+}
 
+.productPrice{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.productDescription {
+  margin-right: 3.6rem;
+}
+
+.color {
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+  border-radius: 20px;
 
 .black {
   background-color: black;
 }
+
 .silver {
   background: linear-gradient(
     180deg,
@@ -72,6 +102,7 @@ input[type="radio"]::before {
     rgba(223, 224, 225, 1) 100%
   );
 }
+
 .gold {
   background: linear-gradient(
     180deg,
@@ -79,14 +110,21 @@ input[type="radio"]::before {
     rgba(248, 240, 139, 1) 100%
   );
 }
-
   }
-
 
   .colorBtn_black {
     background-color: black;
   }
 
+input {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  content: "";
+}
+input::after {
+  
+}
 
 .inStock {
   border-radius: 50%;
@@ -94,6 +132,7 @@ input[type="radio"]::before {
   height: 15px;
   background-color: #008000;
 }
+
 .addtocartBtn {
   border-radius: 2.5px;
   width: 23rem;
