@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 
-h2 {
+.product_heading {
   font-size: 48px;
   padding: 2.5rem;
   color: #495464;
@@ -51,14 +51,12 @@ input[type="radio"]::before {
 .productDescription {
   margin-right: 3.6rem;
 }
-
 .color {
   height: 30px;
   width: 30px;
   border: 1px solid black;
   border-radius: 20px;
 
-}
 
 .black {
   background-color: black;
@@ -80,10 +78,13 @@ input[type="radio"]::before {
   );
 }
 
-.productPrice {
-  font-size: 24px;
-  font-weight: 600;
-}
+  }
+
+
+  .colorBtn_black {
+    background-color: black;
+  }
+
 
 .inStock {
   border-radius: 50%;
@@ -96,4 +97,35 @@ input[type="radio"]::before {
   border-radius: 2.5px;
   width: 23rem;
   height: 2.8rem;
+
+  .colorBtn_silver {
+    background: linear-gradient(180deg,
+        rgba(145, 146, 146, 1) 0%,
+        rgba(223, 224, 225, 1) 100%);
+  }
+
+  .colorBtn_gold {
+    background: linear-gradient(180deg,
+        rgba(175, 135, 38, 1) 0%,
+        rgba(248, 240, 139, 1) 100%);
+  }
+
+  .productPrice {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .inStock {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #008000;
+  }
+
+  .addtocartBtn {
+    border-radius: 2.5px;
+    width: 23rem;
+    height: 2.8rem;
+  }
+
 }
