@@ -18,3 +18,18 @@
 .shoppingcart_icon {
   color: #f4f4f2;
 }
+
+.totalCount {
+    top: 2rem;
+    right: 8.5rem;
+    position: absolute;
+    background-color: #FF6900;
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    text-align: center;
+}

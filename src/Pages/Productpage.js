@@ -3,12 +3,16 @@ import "../global.scss";
 import "./ProductPage.scss";
 import "../Components/Buttons.scss"
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import Sortbyform from "../Components/Sortbyform";
 import { useSearchParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { CartContext } from "../Context/CartContext";
 
 const Productpage = () => {
+
+    const { addToCart } = useContext(CartContext)
+
     const fetchUrl = 'http://localhost:4000/products';
     const [params] = useSearchParams();
     const [allProducts, setAllProducts] = useState();
@@ -31,6 +35,17 @@ const Productpage = () => {
             .finally(() => setLoading(false))
     }, [defaultFetch]);
 
+    const handleAddToCart = (singleproduct) => {
+        addToCart({
+            id: singleproduct.id,
+            image: singleproduct.images[0], 
+            title: singleproduct.title, 
+            stock: singleproduct.stock, 
+            count: 1, 
+            price: singleproduct.price
+        })
+    }
+
     /*     useEffect(() => {
             axios(searchParams.get("search") ? defaultFetch + `?q=${searchParams.get("search")}` : navigate(defaultFetch))
                 .then(response => setAllProducts(response.data))
@@ -52,7 +67,8 @@ const Productpage = () => {
                         <h3>{singleproduct.title}</h3>
                         <p>£ {singleproduct.price}</p>
                         <div className="stock_container">
-                            <button className="button_productpage">Add to cart</button><p className="stock_text">In stock<i className="stock_icon"></i></p>
+                            <button className="button_productpage" onClick={() => { handleAddToCart( singleproduct) } }>Add to cart</button>
+                            <p className="stock_text">In stock<i className="stock_icon"></i></p>
                         </div>
                     </figure>
                 ))}
