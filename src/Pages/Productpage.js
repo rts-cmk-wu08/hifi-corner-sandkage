@@ -37,6 +37,7 @@ const Productpage = () => {
 
     const handleAddToCart = (singleproduct) => {
         addToCart({
+            id: singleproduct.id,
             image: singleproduct.images[0], 
             title: singleproduct.title, 
             stock: singleproduct.stock, 

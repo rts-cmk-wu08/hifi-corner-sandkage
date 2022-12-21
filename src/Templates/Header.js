@@ -19,8 +19,8 @@ const Header = () => {
         <SearchBar placeholder="Search product..." />
         <FaUser className="user_icon" />
         <ShoppingCart />
-        <div style={{color: "orange"}}>{totalCount}</div>
-        <div style={{color: "green"}}>{totalPrice}</div>
+        <div className="totalCount">{totalCount}</div>
+        <div style={{color: "white"}}>{totalPrice}</div>
       </div>
     </header>
   );
