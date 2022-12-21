@@ -8,7 +8,6 @@ import Product, { loader as getProductDetails } from './Components/Product';
 import Faq from "./Pages/Faq.js"
 import Productpage from './Pages/Productpage';
 import About from './Pages/About';
-import Productpage from './Pages/Productpage';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
