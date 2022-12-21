@@ -32,13 +32,17 @@ const Product = () => {
           <p>{productData.stock}</p>
         </div>
       </article>
+      <h3>Product specifications</h3>
       <article className="specsContainer">
-        <h3>Product specifications</h3>
         <table>
           {productData.specs.map((specdata) => (
-            <th>{specdata.name + specdata.value}</th>
+            <>
+              <div className="specifications">
+                <th className="specsheader">{specdata.name}</th>
+                <td>{specdata.value}</td>
+              </div>
+            </>
           ))}
-          <td></td>
           <th></th>
           <td></td>
         </table>

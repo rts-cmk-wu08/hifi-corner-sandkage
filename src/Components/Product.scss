@@ -36,6 +36,7 @@ p {
   margin-top: 2.5rem;
 
 
+
   label {
     width: 40px;
     height: 40px;
@@ -54,6 +55,7 @@ input[type="radio"] {
   background-color: rgb(255, 255, 255);
   /* Not removed via appearance */
   margin: 0;
+
 
 
 }
@@ -83,7 +85,7 @@ input[type="radio"] {
   width: 40px;
   height: 40px;
   border-radius: 30px;
-  background: linear-gradient(200.56deg, #919292 24.92%, #DFE0E1 86.36%);
+  background: linear-gradient(200.56deg, #919292 24.92%, #dfe0e1 86.36%);
   cursor: pointer;
   transition: 0.25s;
 }
@@ -92,12 +94,12 @@ input[type="radio"] {
   width: 40px;
   height: 40px;
   border-radius: 30px;
-  background: linear-gradient(191.53deg, #AF8726 13.03%, #F8F08B 91.53%);
+  background: linear-gradient(191.53deg, #af8726 13.03%, #f8f08b 91.53%);
   cursor: pointer;
   transition: 0.25s;
 }
 
-.productPrice{
+.productPrice {
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -118,17 +120,9 @@ input[type="radio"] {
   border-radius: 20px;
 }
 
-.black {
-  background-color: black;
-}
-
-.silver {
-  background: linear-gradient(
-    180deg,
-    rgba(145, 146, 146, 1) 0%,
-    rgba(223, 224, 225, 1) 100%
-  );
-}
+  .black {
+    background-color: black;
+  }
 
 .gold {
   background: linear-gradient(
@@ -138,9 +132,18 @@ input[type="radio"] {
   );
 }
 
-  .colorBtn_black {
-    background-color: black;
+  .gold {
+    background: linear-gradient(
+      180deg,
+      rgba(175, 135, 38, 1) 0%,
+      rgba(248, 240, 139, 1) 100%
+    );
   }
+
+
+.colorBtn_black {
+  background-color: black;
+}
 
 input {
   width: 40px;
@@ -148,6 +151,7 @@ input {
   cursor: pointer;
   content: "";
 }
+
 
 .inStock {
   border-radius: 50%;
@@ -162,15 +166,19 @@ input {
   height: 2.8rem;
 
   .colorBtn_silver {
-    background: linear-gradient(180deg,
-        rgba(145, 146, 146, 1) 0%,
-        rgba(223, 224, 225, 1) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(145, 146, 146, 1) 0%,
+      rgba(223, 224, 225, 1) 100%
+    );
   }
 
   .colorBtn_gold {
-    background: linear-gradient(180deg,
-        rgba(175, 135, 38, 1) 0%,
-        rgba(248, 240, 139, 1) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(175, 135, 38, 1) 0%,
+      rgba(248, 240, 139, 1) 100%
+    );
   }
 
   .productPrice {
@@ -190,5 +198,32 @@ input {
     width: 23rem;
     height: 2.8rem;
   }
-
 }
+
+.specsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.specifications {
+  display: flex;
+  background: #dfe0e1;
+  height: 50px;
+  align-items: center;
+  td,
+  th {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+  td {
+    width: 287px;
+  }
+}
+.specifications:nth-child(even) {
+  background-color: white;
+}
+.specsheader {
+  border-right: 1px solid #d2d2d2;
+  width: 213px;
+}
+
