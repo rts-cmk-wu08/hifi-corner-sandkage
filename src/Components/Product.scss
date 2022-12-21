@@ -84,16 +84,23 @@ p {
   margin-right: 3.6rem;
 }
 
+.radio{
+  accent-color:#FF6900;
+
+}
+
 .color {
   height: 30px;
   width: 30px;
   border: 1px solid black;
   border-radius: 20px;
+}
 
   .black {
     background-color: black;
   }
 
+<<<<<<< HEAD
   .silver {
     background: linear-gradient(
       180deg,
@@ -101,6 +108,15 @@ p {
       rgba(223, 224, 225, 1) 100%
     );
   }
+=======
+.gold {
+  background: linear-gradient(
+    180deg,
+    rgba(175, 135, 38, 1) 0%,
+    rgba(248, 240, 139, 1) 100%
+  );
+}
+>>>>>>> f909268debcfd1a6e55b2a0bf32efc584afd11ab
 
   .gold {
     background: linear-gradient(
@@ -121,8 +137,11 @@ input {
   cursor: pointer;
   content: "";
 }
+<<<<<<< HEAD
 input::after {
 }
+=======
+>>>>>>> f909268debcfd1a6e55b2a0bf32efc584afd11ab
 
 .inStock {
   border-radius: 50%;
