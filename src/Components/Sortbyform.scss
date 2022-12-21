@@ -1,23 +1,74 @@
 .sortingform {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    row-gap: 10px;
 }
 
-.brand,
-.color {
+.sortbyheading {
+    width: 263px;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.brand_form {
+    padding: 11px;
     justify-self: center;
     display: grid;
     grid-template-columns: repeat(2, auto);
     background-color: #E8E8E8;
     width: 263px;
 
+    .sort_title {
+        font-weight: 400;
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
     label {
+        align-self: center;
         justify-self: start;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+
     }
 
     input {
         justify-self: end;
         width: 20px;
+        align-self: center;
     }
 
+}
+
+.color_form {
+    padding: 11px;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    background-color: #E8E8E8;
+    width: 263px;
+
+    .sort_title {
+        font-weight: 400;
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    label {
+        align-self: center;
+        justify-self: start;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+
+    input {
+        align-self: center;
+        justify-self: end;
+        width: 20px;
+    }
 }
