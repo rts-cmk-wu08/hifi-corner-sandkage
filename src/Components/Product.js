@@ -16,11 +16,7 @@ const Product = () => {
 
           <div className="product">
             <label className="black" for="black_Btn">
-<<<<<<< HEAD
-              <input className="radio" type="radio" name="radio" />
-=======
               <input className="radio black" type="radio" name="radio"  />
->>>>>>> f909268debcfd1a6e55b2a0bf32efc584afd11ab
             </label>
             <label className="silver" for="silver_Btn">
               <input className="radio silver" type="radio" name="radio" />

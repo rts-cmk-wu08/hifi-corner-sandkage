@@ -100,15 +100,6 @@ p {
     background-color: black;
   }
 
-<<<<<<< HEAD
-  .silver {
-    background: linear-gradient(
-      180deg,
-      rgba(145, 146, 146, 1) 0%,
-      rgba(223, 224, 225, 1) 100%
-    );
-  }
-=======
 .gold {
   background: linear-gradient(
     180deg,
@@ -116,7 +107,6 @@ p {
     rgba(248, 240, 139, 1) 100%
   );
 }
->>>>>>> f909268debcfd1a6e55b2a0bf32efc584afd11ab
 
   .gold {
     background: linear-gradient(
@@ -125,7 +115,7 @@ p {
       rgba(248, 240, 139, 1) 100%
     );
   }
-}
+
 
 .colorBtn_black {
   background-color: black;
@@ -137,11 +127,7 @@ input {
   cursor: pointer;
   content: "";
 }
-<<<<<<< HEAD
-input::after {
-}
-=======
->>>>>>> f909268debcfd1a6e55b2a0bf32efc584afd11ab
+
 
 .inStock {
   border-radius: 50%;
@@ -216,5 +202,4 @@ input::after {
   border-right: 1px solid #d2d2d2;
   width: 213px;
 }
-.innerline {
-}
+
