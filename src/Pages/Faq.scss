@@ -1,21 +1,31 @@
 .faq{
-    margin: 2.125rem;
-
-    h1 {
+    
+    .headline {
         font-size: 3rem;
         text-transform: uppercase;
     }
     article {
-        margin: 1rem 2.75rem;
-        p {
-            font-size: 0.875rem;
-            white-space: pre-wrap;
-        }
+        padding: 2rem;
     }
+}
+
+.subheadline {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.faqtext {
+    font-size: 0.875rem;
+    white-space: pre-wrap;
+}
+
+.faqbox {
+    margin: 1.5rem auto;
+    width: 70.25rem;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .headlinetext {
     font-size: 1.5rem;
-    padding-bottom: 1rem;
 }
 

@@ -42,7 +42,6 @@ const Productpage = () => {
             <div className="searchby">
                 <h2>PRODUCTS</h2>
                 <div className="searchby_container">
-                    <h3>Sort by</h3>
                     <Sortbyform />
                 </div>
             </div>

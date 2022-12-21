@@ -16,18 +16,21 @@ const Faq = () => {
 
     return loading ? <p>Loading...</p> : ( 
         <section className="faq">
+            <h1 className="headline">Faq</h1>
+            <div className="faqbox">
             {
                 faq.map((faq) => (
                     <>
-                    <h1>{faq.headline}</h1>
+                    
                     <article id={`${faq.subheadline}`}>
                         <p className="headlinetext">{faq.headlinetext}</p>
-                        <h2>{faq.subheadline}</h2>
-                        <p>{faq.text}</p>
+                        <h2 className="subheadline">{faq.subheadline}</h2>
+                        <p className="faqtext">{faq.text}</p>
                     </article>
                     </>
                 ))
             }
+            </div>
         </section>
      );
 }

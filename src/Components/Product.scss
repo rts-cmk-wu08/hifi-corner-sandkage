@@ -34,6 +34,30 @@ p {
   grid-template-columns: repeat(3, 3rem);
   gap: 1.5rem;
   margin-top: 2.5rem;
+
+
+
+  label {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 30px;
+  }
+}
+
+
+
+input[type="radio"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: rgb(255, 255, 255);
+  /* Not removed via appearance */
+  margin: 0;
+
+
+
 }
 
 .black:hover {
