@@ -1,10 +1,23 @@
-.brand{
+.sortingform {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-
+    grid-template-columns: repeat(1, 1fr);
 }
 
-.color{
+.brand,
+.color {
+    justify-self: center;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, auto);
+    background-color: #E8E8E8;
+    width: 263px;
+
+    label {
+        justify-self: start;
+    }
+
+    input {
+        justify-self: end;
+        width: 20px;
+    }
+
 }
