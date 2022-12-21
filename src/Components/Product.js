@@ -1,6 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import "../Components/Product.scss";
-import ImageSlider from "./ImageSlider.js"
+import ImageSlider from "./ImageSlider.js";
 
 const Product = () => {
   const productData = useLoaderData();
@@ -15,24 +15,33 @@ const Product = () => {
           <p>{productData.description}</p>
 
           <div className="product">
-            <label className="black" for="black">
-              <input type="radio" name="radio" className="silver" />
-              Black
+            <label className="black" for="black_Btn">
+              <input className="radio black" type="radio" name="radio"  />
             </label>
-            <label className="silver" for="colorBtn_silver color">
-              <input className="" type="radio" name="radio" />
-              Silver
+            <label className="silver" for="silver_Btn">
+              <input className="radio silver" type="radio" name="radio" />
             </label>
-            <label className="gold" for="colorBtn_gold color">
-              <input type="radio" className="gold" name="radio" />
-              Gold
+            <label className="gold" for="gold_Btn">
+              <input className="radio gold" type="radio" name="radio" />
             </label>
           </div>
+          
           <p className="productPrice">£ {productData.price}</p>
           <div className="inStock"></div>
           <button className="addtocartBtn">Add to cart</button>
           <p>{productData.stock}</p>
         </div>
+      </article>
+      <article className="specsContainer">
+        <h3>Product specifications</h3>
+        <table>
+          {productData.specs.map((specdata) => (
+            <th>{specdata.name + specdata.value}</th>
+          ))}
+          <td></td>
+          <th></th>
+          <td></td>
+        </table>
       </article>
     </>
   );
