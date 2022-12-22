@@ -52,7 +52,7 @@ input[type="radio"] {
   -webkit-appearance: none;
   appearance: none;
   /* For iOS < 15 to remove gradient background */
-  background-color: rgb(255, 255, 255);
+  background-color: black;
   /* Not removed via appearance */
   margin: 0;
 
@@ -140,11 +140,6 @@ input[type="radio"] {
     );
   }
 
-
-.colorBtn_black {
-  background-color: black;
-}
-
 input {
   width: 40px;
   height: 40px;
@@ -164,6 +159,10 @@ input {
   border-radius: 2.5px;
   width: 23rem;
   height: 2.8rem;
+
+  .colorBtn_black {
+    background-color: black;
+  }
 
   .colorBtn_silver {
     background: linear-gradient(
